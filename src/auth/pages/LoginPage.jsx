@@ -100,6 +100,9 @@ export const LoginPage = () => {
               </Link>
             </Grid>
 
+            <Grid container direction='row' justifyContent='center'>
+              <Typography sx={{ mt: 1, fontSize:12 }}>Desarrollado por @devdaniela</Typography>
+            </Grid>
           </Grid>
 
 
