@@ -6,9 +6,12 @@ import { Google } from '@mui/icons-material';
 
 import { AuthLayout } from '../layout/AuthLayout';
 import { useForm } from '../../hooks';
-import { checkingAuthentication, startGoogleSignIn, startLoginWithEmailPassword } from '../../store/auth';
+import { startGoogleSignIn, startLoginWithEmailPassword } from '../../store/auth';
 
-
+const formDate = {
+  email: '',
+  password: '',
+}
 
 export const LoginPage = () => {
 
@@ -18,10 +21,7 @@ export const LoginPage = () => {
 
   const isAuthtenticating = useMemo( () => status === 'checking', [status] );
 
-  const { email, password, onInputChange } = useForm({
-      email: '',
-      password: '',
-  });
+  const { email, password, onInputChange } = useForm(formDate);
 
   const onSubmit = (event) => {
     event.preventDefault();
