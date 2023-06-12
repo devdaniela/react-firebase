@@ -2,9 +2,9 @@ import { v2 as cloudinary } from 'cloudinary';
 import { fileUpload } from '../../src/helpers/fileUpload';
 
 cloudinary.config({
-    cloud_name: import.meta.env.CLOUDINARY_CLOUD_NAME,
-    api_key: import.meta.env.CLOUDINARY_API_KEY,
-    api_secret: import.meta.env.CLOUDINARY_API_SECRET,
+    cloud_name: 'ddrg-cursos',
+    api_key: '388965283853524',
+    api_secret: 'RssU3i1hTmgaKDi0euStHS6Eilk',
     secure: true
 })
 
